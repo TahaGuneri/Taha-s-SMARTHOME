@@ -1,0 +1,64 @@
+body,html{
+    margin: 0;
+    background-color: #f1f2f6;
+}
+footer{
+    height: 3rem;
+    text-align: center;
+    width: 100%;
+    color: white;
+    background-color: #242a34;
+    position: fixed;
+    bottom: 0px;
+}
+nav{
+    height: 3rem;
+    width: 100%;
+    background-color: #242a34;
+}
+.cards{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    
+}
+.card{
+    height: 12rem;
+    background-color: #242a34;
+    text-align: center;
+    color: #0091ff;
+    padding: 1rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    
+}   
+
+.my_button{
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  color:black;
+  border: 2px solid #0091ff;
+}
+
+  
+  .my_button:hover {
+    background-color:  #0091ff;
+    color: white;
+  }
+
+
+@media (max-width:900px){
+    .cards{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (max-width:600px){
+    .cards{
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Taha Guneri">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Smart Home</title>
+</head>
+<body>
+    <nav></nav>
+
+    <h1 style="text-align: center;" id="this_user"></h1>
+
+    <div id="content" class="cards">
+        <div class="card">
+        	<h1>TEMPERATURE</h1>
+        	<div>
+        		<h1 id="temp">0</h1>
+        	</div>
+        </div>
+        <div class="card">
+            <h1>AIR QUALITY</h1>
+            <div>
+        		<h1 id="air_quality">0</h1>
+        	</div>
+        </div>
+        <div class="card">
+            <h1>TOP ANIME</h1>
+            <div>
+                <h4 id="anime1"></h4>
+                <h4 id="anime2"></h4>
+                <h4 id="anime3"></h4>
+        	</div>
+        </div>
+        <div class="card">
+            <h1>USD > TRY</h1>
+            <div>
+        		<h1 id="currency"></h1>
+        	</div>
+        </div>
+    </div>
+
+    <form style="display:flex; justify-content:center; margin-top: 20pt;">
+        <label for="fname"><b>Your name:</b></label><br>
+        <input type="text" id="username" name="fname" value=""><br>
+        <input class="my_button" type="submit" onclick="userFunction()" href="#" value="Submit">
+    </form> 
+
+    <footer>
+    	<h3>Copyright© 2020 MuhammedTaha Guneri</h3>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>
